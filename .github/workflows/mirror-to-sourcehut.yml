@@ -1,0 +1,50 @@
+name: Mirror to SourceHut
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: mirror-to-sourcehut
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout GitHub repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Configure HTTPS auth for SourceHut
+        env:
+          SOURCEHUT_TOKEN: ${{ secrets.SOURCEHUT_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          cat > ~/.netrc <<EOF
+          machine git.sr.ht
+          login igareck
+          password ${SOURCEHUT_TOKEN}
+          EOF
+
+          chmod 600 ~/.netrc
+
+      - name: Push main branch to SourceHut
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git remote remove sourcehut 2>/dev/null || true
+          git remote add sourcehut "https://git.sr.ht/~igareck/vpn-configs-for-russia"
+
+          git push sourcehut HEAD:main --force
