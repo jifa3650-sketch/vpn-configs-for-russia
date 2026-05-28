@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-05-28 / 03:11 (Moscow)
-# Количество: 2
+# Date/Time: 2026-05-28 / 04:46 (Moscow)
+# Количество: 4
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,6 +9,20 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: 🇧🇾 Belarus [SNI-RU] max.ru
+  type: vless
+  server: "\x31\x38\x35\x2e\x36\x36\x2e\x36\x38\x2e\x39\x30"
+  port: 10444
+  uuid: "\x66\x34\x64\x66\x33\x30\x39\x36\x2d\x38\x35\x36\x38\x2d\x34\x63\x38\x36\x2d\x38\x33\x64\x32\x2d\x39\x38\x35\x36\x32\x33\x30\x33\x35\x37\x32\x34"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4
+    short-id: 378086fbdb7c61cd
+  flow: xtls-rprx-vision
 - name: 🇵🇱 Poland [SNI-RU] www.kinopoisk.ru
   type: vless
   server: "\x38\x35\x2e\x31\x35\x38\x2e\x31\x30\x39\x2e\x31\x31\x33"
@@ -28,6 +42,20 @@ proxies:
     mode: auto
     headers:
       Host: "\x77\x77\x77\x2e\x6b\x69\x6e\x6f\x70\x6f\x69\x73\x6b\x2e\x72\x75"
+- name: 🇪🇸 Spain | 🌐 [SNI-RU] www.vk.ru
+  type: vless
+  server: "\x31\x39\x35\x2e\x39\x36\x2e\x31\x33\x32\x2e\x31\x32\x35"
+  port: 443
+  uuid: "\x36\x39\x61\x32\x61\x66\x35\x38\x2d\x64\x37\x34\x61\x2d\x34\x34\x63\x61\x2d\x38\x36\x34\x61\x2d\x65\x30\x39\x62\x34\x39\x33\x66\x34\x32\x37\x34"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x76\x6b\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: WM-LMz6slGkGPD3zEM8Ntat27n6p6EfbxRsjYmTykV4
+    short-id: 8237eb
+  flow: xtls-rprx-vision
 - name: 🇨🇦 Canada [SNI-RU] eh.vk.com
   type: trojan
   server: "\x36\x34\x2e\x37\x34\x2e\x31\x36\x33\x2e\x31\x31\x38"
