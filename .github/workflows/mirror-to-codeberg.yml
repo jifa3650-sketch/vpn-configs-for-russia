@@ -2,10 +2,12 @@ name: Mirror to Codeberg
 
 on:
   workflow_dispatch:
+  # schedule:
+  #   - cron: "17 * * * *"
 
 concurrency:
   group: mirror-to-codeberg
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -13,6 +15,7 @@ permissions:
 jobs:
   mirror:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout GitHub repository
@@ -32,4 +35,18 @@ jobs:
           git remote remove codeberg 2>/dev/null || true
           git remote add codeberg "https://igareck:${CODEBERG_TOKEN}@codeberg.org/igareck/vpn-configs-for-russia.git"
 
-          git push codeberg HEAD:main --force
+          for attempt in 1 2 3 4 5; do
+            echo "Codeberg push attempt $attempt/5"
+
+            if git push codeberg HEAD:main --force; then
+              echo "Codeberg push successful"
+              exit 0
+            fi
+
+            sleep_time=$((attempt * 60))
+            echo "Codeberg push failed. Sleeping ${sleep_time}s before retry..."
+            sleep "$sleep_time"
+          done
+
+          echo "Codeberg push failed after all retries"
+          exit 1
