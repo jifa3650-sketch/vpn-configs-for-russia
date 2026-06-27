@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-06-27 / 08:00 (Moscow)
-# Количество: 8
+# Date/Time: 2026-06-27 / 10:46 (Moscow)
+# Количество: 12
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -39,6 +39,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless-grpc-reality
+- name: '🇦🇹 Austria [SNI-RU] id.vk.com #3'
+  type: vless
+  server: "\x32\x31\x32\x2e\x31\x31\x36\x2e\x31\x31\x35\x2e\x32\x30"
+  port: 2096
+  uuid: "\x64\x39\x32\x32\x38\x64\x35\x64\x2d\x36\x31\x38\x64\x2d\x34\x37\x37\x31\x2d\x38\x33\x35\x66\x2d\x39\x36\x62\x34\x65\x62\x64\x64\x33\x38\x63\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x69\x64\x2e\x76\x6b\x2e\x63\x6f\x6d"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 - name: 🇩🇪 Germany | 🌐 [SNI-RU] www.avito.ru
   type: vless
   server: "\x34\x35\x2e\x31\x33\x2e\x32\x32\x36\x2e\x39\x37"
@@ -61,7 +76,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x77\x77\x77\x2e\x6b\x69\x6e\x6f\x70\x6f\x69\x73\x6b\x2e\x72\x75"
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: ice5ApDYceTGVoxODC51F4RVW0HBoykvMpgL4_qLABw
     short-id: aabbccdd
@@ -78,6 +93,23 @@ proxies:
   encryption: none
   tls: true
   servername: "\x77\x77\x77\x2e\x6b\x69\x6e\x6f\x70\x6f\x69\x73\x6b\x2e\x72\x75"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ice5ApDYceTGVoxODC51F4RVW0HBoykvMpgL4_qLABw
+    short-id: aabbccdd
+  network: xhttp
+  xhttp-opts:
+    path: "\x2f\x74\x44\x6a\x6b\x65\x75\x78\x79\x51\x50\x55\x44\x71\x46\x38\x77\x54\x32"
+    mode: auto
+- name: '🇵🇱 Poland [SNI-RU] www.kinopoisk.ru #3'
+  type: vless
+  server: "\x38\x35\x2e\x31\x35\x38\x2e\x31\x30\x39\x2e\x31\x31\x33"
+  port: 443
+  uuid: "\x38\x35\x35\x33\x61\x65\x39\x30\x2d\x32\x61\x38\x31\x2d\x34\x39\x33\x61\x2d\x62\x30\x35\x30\x2d\x38\x65\x65\x37\x39\x63\x38\x64\x62\x65\x34\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x6b\x69\x6e\x6f\x70\x6f\x69\x73\x6b\x2e\x72\x75"
   client-fingerprint: qq
   reality-opts:
     public-key: ice5ApDYceTGVoxODC51F4RVW0HBoykvMpgL4_qLABw
@@ -86,6 +118,38 @@ proxies:
   xhttp-opts:
     path: "\x2f\x74\x44\x6a\x6b\x65\x75\x78\x79\x51\x50\x55\x44\x71\x46\x38\x77\x54\x32"
     mode: auto
+- name: '🇵🇱 Poland [SNI-RU] www.kinopoisk.ru #4'
+  type: vless
+  server: "\x70\x6f\x6c\x36\x2e\x6f\x64\x61\x76\x70\x6e\x2e\x6f\x6e\x6c\x69\x6e\x65"
+  port: 443
+  uuid: "\x38\x35\x35\x33\x61\x65\x39\x30\x2d\x32\x61\x38\x31\x2d\x34\x39\x33\x61\x2d\x62\x30\x35\x30\x2d\x38\x65\x65\x37\x39\x63\x38\x64\x62\x65\x34\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x6b\x69\x6e\x6f\x70\x6f\x69\x73\x6b\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ice5ApDYceTGVoxODC51F4RVW0HBoykvMpgL4_qLABw
+    short-id: aabbccdd
+  network: xhttp
+  xhttp-opts:
+    path: "\x2f\x74\x44\x6a\x6b\x65\x75\x78\x79\x51\x50\x55\x44\x71\x46\x38\x77\x54\x32"
+- name: '🇵🇱 Poland [SNI-RU] www.kinopoisk.ru #5'
+  type: vless
+  server: "\x70\x6f\x6c\x36\x2e\x6f\x64\x61\x76\x70\x6e\x2e\x6f\x6e\x6c\x69\x6e\x65"
+  port: 443
+  uuid: "\x38\x35\x35\x33\x61\x65\x39\x30\x2d\x32\x61\x38\x31\x2d\x34\x39\x33\x61\x2d\x62\x30\x35\x30\x2d\x38\x65\x65\x37\x39\x63\x38\x64\x62\x65\x34\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x6b\x69\x6e\x6f\x70\x6f\x69\x73\x6b\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: ice5ApDYceTGVoxODC51F4RVW0HBoykvMpgL4_qLABw
+    short-id: aabbccdd
+  network: xhttp
+  xhttp-opts:
+    path: "\x2f\x74\x44\x6a\x6b\x65\x75\x78\x79\x51\x50\x55\x44\x71\x46\x38\x77\x54\x32"
 - name: 🌐 Anycast-IP | 🇫🇮 🇬🇧 [SNI-RU] ads.x5.ru
   type: vless
   server: "\x66\x69\x72\x65\x2e\x6a\x79\x6b\x76\x70\x6e\x2e\x63\x6f\x6d"
