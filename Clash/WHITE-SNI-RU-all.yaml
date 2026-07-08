@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-07-08 / 15:54 (Moscow)
-# Количество: 7
+# Date/Time: 2026-07-08 / 17:59 (Moscow)
+# Количество: 6
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -37,22 +37,6 @@ proxies:
     public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
     short-id: ece180c605b5453c
   flow: xtls-rprx-vision
-- name: 🇵🇱 Poland | 🌐 [SNI-RU] dzen.ru
-  type: vless
-  server: "\x32\x30\x31\x2e\x35\x31\x2e\x31\x2e\x32\x34\x33"
-  port: 2053
-  uuid: "\x66\x66\x33\x66\x33\x62\x61\x32\x2d\x37\x39\x65\x34\x2d\x31\x31\x66\x31\x2d\x62\x36\x36\x35\x2d\x62\x36\x63\x31\x35\x38\x66\x61\x38\x35\x39\x33"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x64\x7a\x65\x6e\x2e\x72\x75"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: j8OW1foMwfeiy3VMbNPHLgTXgy_ZPdFFxv-H3HrbNF0
-    short-id: 7cb9baf7b4a81603
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-direct
 - name: 🇵🇱 Poland [SNI-RU] yastatic.net
   type: vless
   server: "\x38\x31\x2e\x39\x30\x2e\x31\x37\x2e\x31\x36\x34"
