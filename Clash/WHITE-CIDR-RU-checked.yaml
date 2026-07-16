@@ -1,6 +1,6 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-07-16 / 19:27 (Moscow)
+# Date/Time: 2026-07-16 / 21:18 (Moscow)
 # Количество: 10
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
@@ -18,7 +18,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
-  client-fingerprint: firefox
+  client-fingerprint: android
   reality-opts:
     public-key: MZ4v9kcs6nnAKuCAz4pvViC50BoM3exoL_5Yi-1b1kE
     short-id: 59de66570907b747
@@ -46,12 +46,12 @@ proxies:
   encryption: none
   tls: true
   servername: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
-  client-fingerprint: firefox
+  client-fingerprint: edge
   reality-opts:
     public-key: vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI
     short-id: f8a8ee8381529673
   flow: xtls-rprx-vision
-- name: 🇵🇱 Poland | 🌐 | [*CIDR] VK
+- name: '🇵🇱 Poland | 🌐 [*CIDR] VK #2'
   type: vless
   server: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
   port: 8443
@@ -60,7 +60,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
-  client-fingerprint: edge
+  client-fingerprint: firefox
   reality-opts:
     public-key: vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI
     short-id: f8a8ee8381529673
@@ -80,6 +80,20 @@ proxies:
     short-id: f8a8ee8381529673
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] VK #2'
+  type: vless
+  server: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
+  port: 8443
+  uuid: "\x36\x38\x64\x33\x66\x63\x62\x65\x2d\x66\x30\x32\x35\x2d\x31\x66\x34\x30\x2d\x38\x32\x64\x36\x2d\x39\x34\x35\x35\x63\x35\x65\x35\x66\x36\x62\x35"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI
+    short-id: f8a8ee8381529673
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] VK #3'
   type: vless
   server: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
   port: 8443
@@ -131,20 +145,6 @@ proxies:
   tls: true
   servername: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
   client-fingerprint: firefox
-  reality-opts:
-    public-key: vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI
-    short-id: f8a8ee8381529673
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 | [*CIDR] VK #4'
-  type: vless
-  server: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
-  port: 8443
-  uuid: "\x36\x38\x64\x33\x66\x63\x62\x65\x2d\x66\x30\x32\x35\x2d\x31\x66\x34\x30\x2d\x38\x32\x64\x36\x2d\x39\x34\x35\x35\x63\x35\x65\x35\x66\x36\x62\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x73\x65\x63\x67\x65\x74\x2e\x72\x75"
-  client-fingerprint: chrome
   reality-opts:
     public-key: vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI
     short-id: f8a8ee8381529673
