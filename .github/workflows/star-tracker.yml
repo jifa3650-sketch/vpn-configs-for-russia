@@ -27,7 +27,7 @@ jobs:
       - name: Generate star history chart
         uses: fbuireu/github-star-tracker@9aa99212f2fdb73a5f288de5e0ad2c8d16d20553 # v1.23.0
         with:
-          github-token: ${{ secrets.STAR_TRACKER_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
           only-orgs: igareck
           only-repos: vpn-configs-for-russia
