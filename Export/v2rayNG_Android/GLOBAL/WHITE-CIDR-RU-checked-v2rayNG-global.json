@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-checked — v2rayNG Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "27 proxies",
+      "18 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "v2rayNG",
     "source": "WHITE-CIDR-RU-checked.txt",
-    "source_datetime": "2026-10-12 03:27 Moscow"
+    "source_datetime": "2026-10-26 02:39 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -70,7 +70,8 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -127,7 +128,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -148,7 +150,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -169,7 +172,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -190,7 +194,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -211,7 +216,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -232,7 +238,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -253,7 +260,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -274,7 +282,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -295,7 +304,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -316,7 +326,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -337,7 +348,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -358,7 +370,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:birthdaysale.net"
+          "full:flatcrest.net",
+          "full:router.hermit.pw"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -446,36 +459,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 8443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "flatcrest.net",
           "fingerprint": "firefox",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -485,36 +498,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "qq",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -524,36 +537,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "89.208.210.53",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "edge",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "chrome",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -563,36 +571,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "89.208.210.53",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "edge",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "firefox",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -602,36 +605,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "89.208.210.53",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "ios",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -641,36 +639,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "89.208.210.53",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "qq",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -680,36 +673,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "89.208.210.53",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "qq",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "safari",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -719,36 +707,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "router.hermit.pw",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "ios",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
+          "shortId": "10a59b0a94367ac2"
         }
       }
     },
@@ -758,36 +743,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "router.hermit.pw",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "firefox",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -797,36 +778,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "router.hermit.pw",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
+          "serverName": "music.apple.com",
           "fingerprint": "chrome",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
+          "shortId": "10a59b0a94367ac2"
         }
       }
     },
@@ -836,35 +814,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "router.hermit.pw",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "safari",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
+          "shortId": "10a59b0a94367ac2"
         }
       }
     },
@@ -874,36 +850,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "router.hermit.pw",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
+          "serverName": "music.apple.com",
           "fingerprint": "chrome",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -913,36 +885,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "router.hermit.pw",
+            "port": 19133,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "random",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "music.apple.com",
+          "fingerprint": "firefox",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
+          "shortId": "10a59b0a94367ac2"
         }
       }
     },
@@ -952,11 +921,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "158.160.243.46",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "id": "0477e879-f2a7-4b76-aa29-28f36b45d4b6",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -978,10 +947,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "rutube.ru",
+          "fingerprint": "chrome",
+          "publicKey": "y3dqCRYQO7GM7DIdQRG1uDjBNRK2vyXd8RJL160WZz4",
+          "shortId": "8a1f9479"
         }
       }
     },
@@ -991,11 +960,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "158.160.243.46",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "id": "0477e879-f2a7-4b76-aa29-28f36b45d4b6",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1017,10 +986,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "serverName": "rutube.ru",
+          "fingerprint": "ios",
+          "publicKey": "y3dqCRYQO7GM7DIdQRG1uDjBNRK2vyXd8RJL160WZz4",
+          "shortId": "8a1f9479"
         }
       }
     },
@@ -1030,36 +999,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 2053,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "chrome",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -1069,52 +1038,52 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 2053,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "edge",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
     {
       "tag": "igareck-node-018",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "158.160.180.165",
+            "port": 24212,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c58c1205-b308-416f-8503-c04557abf93d",
+                "alterId": 0,
+                "security": "auto"
               }
             ]
           }
@@ -1131,337 +1100,13 @@
           "header": {
             "type": "none"
           }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-019",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.86.145.78",
-            "port": 8443,
-            "users": [
-              {
-                "id": "2292dd55-db84-45e3-89bc-9a23fd904b22",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "idlecore.me",
-          "fingerprint": "random",
-          "publicKey": "Qf5kMbpi0sUGV4ZB_2wVGdi-iACSFv47quZT-z-ymEo",
-          "shortId": "a1b2c3d4"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-020",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.139.42.225",
-            "port": 7448,
-            "users": [
-              {
-                "id": "2f18de3b-2586-0003-b5ae-a6b2b9412e45",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "ios",
-          "publicKey": "V-wRiXvhBx01utmXJbrThJ_DE4tNJfK6mnzo9EB3fVA"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-021",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.139.42.225",
-            "port": 7448,
-            "users": [
-              {
-                "id": "2f18de3b-2586-0003-b5ae-a6b2b9412e45",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "qq",
-          "publicKey": "V-wRiXvhBx01utmXJbrThJ_DE4tNJfK6mnzo9EB3fVA"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-022",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.139.42.225",
-            "port": 7448,
-            "users": [
-              {
-                "id": "2f18de3b-2586-0003-b5ae-a6b2b9412e45",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "safari",
-          "publicKey": "V-wRiXvhBx01utmXJbrThJ_DE4tNJfK6mnzo9EB3fVA"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-023",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.139.42.225",
-            "port": 7448,
-            "users": [
-              {
-                "id": "2f18de3b-2586-0003-b5ae-a6b2b9412e45",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "V-wRiXvhBx01utmXJbrThJ_DE4tNJfK6mnzo9EB3fVA"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-024",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.241.195.242",
-            "port": 443,
-            "users": [
-              {
-                "id": "1ed2e903-4bbe-4dc3-abeb-91552789748c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "birthdaysale.net",
-          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "birthdaysale.net",
-          "fingerprint": "random"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-025",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.241.195.242",
-            "port": 443,
-            "users": [
-              {
-                "id": "1ed2e903-4bbe-4dc3-abeb-91552789748c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "birthdaysale.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "birthdaysale.net",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-026",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "birthdaysale.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "1ed2e903-4bbe-4dc3-abeb-91552789748c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "birthdaysale.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "birthdaysale.net",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-027",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "birthdaysale.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "1ed2e903-4bbe-4dc3-abeb-91552789748c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "birthdaysale.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "birthdaysale.net",
-          "fingerprint": "qq"
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
